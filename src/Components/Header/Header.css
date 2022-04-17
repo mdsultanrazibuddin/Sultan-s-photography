@@ -24,6 +24,10 @@
 .header{
   text-align: left;
   margin-left: 50px;
+  color: rgb(34, 13, 13);
+}
+.header:hover{
+  color: aliceblue;
 }
 .nav{
   
