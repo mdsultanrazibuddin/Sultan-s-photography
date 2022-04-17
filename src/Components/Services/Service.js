@@ -1,9 +1,10 @@
 import React from 'react';
+import './Service.css'
 
 const Service = () => {
     return (
         <div>
-            <h1>my service point</h1>
+            <h1 className='heading'> My Service</h1>
         </div>
     );
 };
