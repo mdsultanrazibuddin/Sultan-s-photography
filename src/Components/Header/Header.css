@@ -1,0 +1,24 @@
+.navbar{
+   
+    color: rgb(1, 1, 17);
+    background-color: rgb(90, 202, 202);
+    text-decoration: none;
+    border:none;
+    padding: 15px;
+    margin: 20px;
+   
+    border-radius: 10px;
+    
+   
+    
+    
+    
+}
+.navbar:hover{
+    background-color:rgb(92, 175, 175);
+}
+.link{
+    margin-top: 50px;
+   
+}
+
