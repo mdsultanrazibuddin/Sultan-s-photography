@@ -4,7 +4,7 @@
    margin: 30px;
    
    
-    color: rgb(0, 0, 5);
+    color: rgb(16, 65, 99);
     
     text-decoration: none;
   font-size: 20px;
@@ -14,8 +14,8 @@
     color: aliceblue;
 }
 .link{
-    background-color:rgb(70,150,219);
-    height: 60px;
+    background-color:rgb(124,185,239);
+    height: 80px;
     display: flex;
    
     align-items: center;
@@ -24,7 +24,7 @@
 .header{
   text-align: left;
   margin-left: 50px;
-  color: rgb(34, 13, 13);
+  color: rgb(16, 65, 99);
 }
 .header:hover{
   color: aliceblue;

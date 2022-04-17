@@ -1,0 +1,22 @@
+.text{
+    color:#1d187a;
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+}
+.blog{
+    text-align: left;
+}
+.context{
+    border: 2px solid rgb(0, 195, 255);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color:  #DEF6FF;
+}
+.context h1{
+    color: rgb(96, 125, 221);
+}
+.context span{
+    color: rgb(56, 31, 192);
+}

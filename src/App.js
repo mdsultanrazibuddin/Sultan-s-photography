@@ -12,6 +12,7 @@ import Service from './Components/Services/Service';
 import Banner from './Components/Banner/Banner';
 import Footer from './Components/Footer/Footer';
 
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,8 @@ function App() {
      
      <Route path="Blogs" element={<Blogs/>} />
      <Route path="about" element={<About/>} />
+     
+    
      
      <Route path="*" element={<NotFound/>} />
      </Routes>

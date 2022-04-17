@@ -4,15 +4,19 @@
     
 }
 .Image{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     border-radius: 20px;
 }
 .Details{
     text-align: center;
-    width: 300px;
+    width: 400px;
     border: 5px solid rgb(0, 85, 134);
     border-radius: 20px;
-    margin-left: 38%;
+    margin-left: 35%;
     
+}
+.paragraph{
+    text-align: left;
+    padding: 10px;
 }
