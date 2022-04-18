@@ -15,10 +15,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Register from './Components/Register/Register'
 
 
+
 function App() {
   return (
     <div className="App">
        <Header/>
+       
        <Routes>
      <Route path="/" element={ <Home/>} />
      <Route path="service" element={ <Service/>} />

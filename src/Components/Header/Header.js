@@ -16,7 +16,7 @@ const Header = () => {
             <div className='link'>
                 
                <div className='header'>
-                    <h1> Wild Photographer</h1>
+                    <h2> Wild Photographer</h2>
                 
                </div>
                 <nav className='nav' >

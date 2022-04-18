@@ -7,8 +7,7 @@ import { Card } from 'react-bootstrap';
 const About = () => {
     return (
         <div >
-           
-                            <Card className='about-me' style={{ width: '18rem' }}>
+           <Card className='about-me' style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
                     <Card.Title>Sultan Razib Uddin</Card.Title>
