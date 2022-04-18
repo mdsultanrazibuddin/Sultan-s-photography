@@ -11,6 +11,8 @@ import Home from './Components/Home/Home';
 import Service from './Components/Services/Service';
 import Banner from './Components/Banner/Banner';
 import Footer from './Components/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Register from './Components/Register/Register'
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
      
      <Route path="Blogs" element={<Blogs/>} />
      <Route path="about" element={<About/>} />
+     <Route path="Register" element={<Register/>} />
      
     
      
