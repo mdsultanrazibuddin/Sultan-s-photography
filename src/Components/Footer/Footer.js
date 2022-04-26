@@ -1,11 +1,29 @@
+
 import React from 'react';
-import './Footer.css'
+import "./Footer.css"
 
 const Footer = () => {
+
+
+ 
+    const date = new Date();
+    const year = date.getFullYear();
+    
     return (
-        <div className='footer'>
-            <h1>fooooooter</h1>
-        </div>
+      <div className="mt-5 mb-3">
+        <footer className="footer">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 h-100 text-center text-lg-left my-auto mx-auto">
+               
+                <h5 className="footer-text text-muted small mb-5 mt-5 mb-lg-0">
+                  &copy; Wild Photographer {year}. All Rights Reserved.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     );
 };
 

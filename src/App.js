@@ -12,7 +12,9 @@ import Service from './Components/Services/Service';
 import Banner from './Components/Banner/Banner';
 import Footer from './Components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Register from './Components/Register/Register'
+import SignUp from './Components/SignUp/SignUp';
+import Login from './Components/Login/Login';
+
 
 
 
@@ -28,7 +30,8 @@ function App() {
      
      <Route path="Blogs" element={<Blogs/>} />
      <Route path="about" element={<About/>} />
-     <Route path="Register" element={<Register/>} />
+     <Route path="SignUp" element={<SignUp/>} />
+     <Route path="Login" element={<Login/>} />
      
     
      

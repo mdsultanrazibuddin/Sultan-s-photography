@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "Programming er Soru",
+      "img": "./Image/tree-736885__480.jpg",
+      "description": "lorem epsum",
+      "price": "500"
+      
+    },
+    {
+      "id": 2,
+      "name": "Recharge Your Bettery",
+      "img": "./Image/download (1).jpg",
+      "description": "lorem epsum",
+      "price": "300"
+      
+    },
+    {
+      "id": 3,
+      "name": "Algorithms",
+      "img":"./Image/download.jpg",
+      "description": "lorem epsum",
+      "price": "500"
+      
+    }
+    
+    
+    
+  ]
+  

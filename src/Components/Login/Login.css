@@ -1,0 +1,20 @@
+.create-new-account {
+    cursor: pointer;
+}
+
+.forget-pass{
+    cursor: pointer;
+}
+
+.login-container{
+    width: 50%;
+}
+.form-link{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .login-container{
+        width: 90% !important;
+    }
+}
