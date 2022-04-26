@@ -8,12 +8,13 @@ import About from './Components/About/About';
 import NotFound from './Components/NotFound/NotFound';
 import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
-import Service from './Components/Services/Service';
+
 import Banner from './Components/Banner/Banner';
 import Footer from './Components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
+import Service from './Components/Service/Service';
 
 
 

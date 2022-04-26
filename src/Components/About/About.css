@@ -1,25 +1,17 @@
-/* .Heading{
-    text-align: center;
-    color: rgb(94, 157, 212);
+
+
+.picture{
+    width: 80%;
+    border-radius: 80px;
+    margin-top: 50px;
     
 }
-.Image{
-    height: 400px;
-    width: 400px;
-    border-radius: 20px;
+.group-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.Details{
-    text-align: center;
-    width: 400px;
-    border: 5px solid rgb(0, 85, 134);
-    border-radius: 20px;
-    margin-left: 35%;
-    
-}
-.paragraph{
-    text-align: left;
-    padding: 10px;
-} */
-.about-me{
-    text-align: center;
+.text-title{
+   width: 50%;
+   margin-right: 50px;
 }

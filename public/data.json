@@ -1,30 +1,33 @@
 [
-    {
-      "id": 1,
-      "name": "Programming er Soru",
-      "img": "./Image/tree-736885__480.jpg",
-      "description": "lorem epsum",
-      "price": "500"
+  {
+      "id": "1",
+      "img" : "./image/Animal.jpg",
+      "service": "Animal",
+      "headline": "Animal Picture",
+      "description": " Animal photographer is a genre of photography concerned with documenting various forms of wildlife in their natural habitat. As well as requiring photography skills, field craft skills.",
+      "price": "$200"
       
-    },
-    {
-      "id": 2,
-      "name": "Recharge Your Bettery",
-      "img": "./Image/download (1).jpg",
-      "description": "lorem epsum",
-      "price": "300"
+  },
+  {
+      "id": "2",
+      "img" : "./image/Sea-Beach.jpg",
+      "service": "Sea-Beach",
+      "headline": "Sea-Beach Picture",
+      "description": "Beaches are rife with opportunity for macro shots and creative abstracts. footprints in the sand, chipped paint on beach huts or boats, shells on the shore or intersecting blades of dune grass.",
+      "price": "$230"
       
-    },
-    {
-      "id": 3,
-      "name": "Algorithms",
-      "img":"./Image/download.jpg",
-      "description": "lorem epsum",
-      "price": "500"
+  },
+  {
+      "id": "3",
+      "img" : "./image/nature.jpg",
+      "service": "Nature",
+      "headline": "Natural Picture",
+      "description": "Nature photography refers to a wide range of photo taken outdoors & devoted to displaying natural elements such as landscapes, wildlife, forest, and close-ups of natural sceneries.",
+      "price": "$215"
       
-    }
+  }
+]
     
     
-    
-  ]
+  
   
