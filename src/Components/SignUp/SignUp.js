@@ -1,7 +1,7 @@
 // import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 
@@ -16,8 +16,9 @@ const SignUp = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
   const [
-    createUserWithEmailAndPassword
+    createUserWithEmailAndPassword, user
   ] = useCreateUserWithEmailAndPassword(auth);
   
 
@@ -29,6 +30,9 @@ const SignUp = () => {
   }
   const handleConfirmPasswordBlur = event =>{
     setConfirmPassword(event.target.value);
+  }
+  if(user){
+    navigate('/OrderNow')
   }
 
   const handleCreateUser = event =>{

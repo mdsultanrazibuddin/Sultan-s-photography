@@ -15,6 +15,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
 import Service from './Components/Service/Service';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
+import OrderNow from './Components/OrderNow/OrderNow';
 
 
 
@@ -29,7 +31,10 @@ function App() {
      <Route path="/" element={ <Home/>} />
      <Route path="service" element={
        
-         <Service/>
+       
+           <Service/>
+       
+         
        
      } />
     
@@ -38,6 +43,11 @@ function App() {
      <Route path="about" element={<About/>} />
      <Route path="SignUp" element={<SignUp/>} />
      <Route path="Login" element={<Login/>} />
+     <Route path="OrderNow" element={
+        <RequireAuth>
+            <OrderNow/>
+        </RequireAuth>
+     } />
      
     
      
