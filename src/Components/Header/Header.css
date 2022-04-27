@@ -33,5 +33,13 @@
   
   margin-left: 350px;
 }
+.logout-button{
+  
+     background-color: rgb(67,150,220); 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
 
 

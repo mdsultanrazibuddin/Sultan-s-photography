@@ -21,7 +21,7 @@ const Services = (props) => {
                 <div className="d-flex justify-content-center     align-items-center">
                         <div className="mt-1">
                             {/* <button onClick={ () => navigator('/OrderNow')}   className="btn button">Order Now</button> */}
-                            <Link className='navbar' to ="/OrderNow">Order Now</Link>
+                            <Link className='Button-title navbar' to ="/OrderNow">Order Now</Link>
                            
                         </div>
                     </div>

@@ -25,3 +25,10 @@
     height: 200px;
    
 }
+.Button-title{
+    background-color: rgb(67,150,220); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}

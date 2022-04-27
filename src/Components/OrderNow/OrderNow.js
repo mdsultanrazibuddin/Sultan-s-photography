@@ -16,7 +16,7 @@ const OrderNow = () => {
                 
                 <div className="mx-auto my-5 checkout-container">
                 <Form >
-                    <h1 className="mb-lg-0 mb-5 text-center">
+                    <h1 className="register mb-lg-0 mb-5 text-center">
                     Please Fill Up
                     </h1>
                     <Form.Group
@@ -59,7 +59,7 @@ const OrderNow = () => {
                     <Form.Control as="textarea" rows={3} required />
                     </Form.Group>
                     <Button
-                    className="px-5 d-block mx-auto checkout-labels"
+                    className="button px-5 d-block mx-auto checkout-labels"
                     variant="primary"
                     type="submit"
                     >

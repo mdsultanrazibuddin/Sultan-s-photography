@@ -50,7 +50,7 @@ const Login = () => {
     <div className="mx-auto mt-5 login-container">
       
       <Form onSubmit={handleLogin}  className="form-container">
-            <h1 className="text-center register">Sign In</h1>
+            <h1 className="text-center register">Log In</h1>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control

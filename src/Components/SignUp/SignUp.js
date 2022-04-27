@@ -32,7 +32,7 @@ const SignUp = () => {
     setConfirmPassword(event.target.value);
   }
   if(user){
-    navigate('/OrderNow')
+    navigate('/')
   }
 
   const handleCreateUser = event =>{
@@ -47,8 +47,6 @@ const SignUp = () => {
       return;
     }
    
-
-  
   }
   
 
