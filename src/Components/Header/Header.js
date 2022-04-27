@@ -1,6 +1,7 @@
 
 import { signOut } from 'firebase/auth';
 import React from 'react';
+import { Container, Nav, Navbar} from 'react-bootstrap';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
@@ -29,7 +30,7 @@ const Header = () => {
                     
                 
                </div>
-                <nav className='nav' >
+                {/* <nav className='nav' >
                     
                 
                     <Link className='navbar' to ="/">Home</Link>
@@ -51,10 +52,38 @@ const Header = () => {
                    
                     
 
-                </nav>
+                </nav> */}
+              <Navbar expand="lg">
+                    <Container>
+                       
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="navbar me-auto">
+                            <Nav.Link  as ={Link} to = {'/'} href="#home">Home</Nav.Link>
+                            <Nav.Link as ={Link} to = {'/service'} href="#service">Service</Nav.Link>
+                            <Nav.Link as ={Link} to = {'/Blogs'} href="#blog">Blogs</Nav.Link>
+                            <Nav.Link as ={Link} to = {'/about'} href="#about">About</Nav.Link>
+                            <Nav.Link as ={Link} to = {'/signup'} href="#signup">Sign Up</Nav.Link>
+                            
+                            {  
+                                            user ?
+                                            <button className='logout-button'onClick={handleLogOut}>LogOut</button>
+                                            :
+                                            <Nav.Link  as ={Link} to = {'/login'} href="#login">Log In</Nav.Link>
+                                            
+
+                                            
+                                    
+                                            }
+                            
+                        </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+              </Navbar>
                
                 
             </div>
+            
             
         </div>
     );

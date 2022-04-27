@@ -1,14 +1,7 @@
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import React from "react";
 import auth from "../firebase.init";
-
-
 import "./SocialLogin.css";
-
-
-
-
-
 
 const provider = new GoogleAuthProvider();
 
