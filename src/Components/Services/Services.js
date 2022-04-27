@@ -1,8 +1,13 @@
 import React from 'react';
+
+import Login from '../Login/Login';
 import './Services.css'
 
 const Services = (props) => {
     const { img, service, price, headline, description} = props.service
+    const handleOrderNow = () =>{
+        <Login/>
+    }
     return (
         <div className="col-lg-4 mb-5 mt-5  service-container">
         
@@ -15,7 +20,7 @@ const Services = (props) => {
                     <h4 className="card-price text-center">Price: {price}</h4>
                 <div className="d-flex justify-content-center     align-items-center">
                         <div className="mt-1">
-                            <button    className="btn button">Order Now</button>
+                            <button onClick={handleOrderNow}   className="btn button">Order Now</button>
                         </div>
                     </div>
                     {/* col-lg-4 col-md-6 col-sm-12  */}

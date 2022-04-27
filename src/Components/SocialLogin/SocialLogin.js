@@ -1,9 +1,11 @@
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import React from "react";
+import auth from "../firebase.init";
 
 
 import "./SocialLogin.css";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from "../../Firebase/Firebase";
+
+
 
 
 

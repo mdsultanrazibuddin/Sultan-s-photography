@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import './Login.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import auth from '../../Firebase/Firebase'
+
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
 import SocialLogin from '../SocialLogin/SocialLogin';
+import auth from '../firebase.init';
 
 const Login = () => {
   const [email, setEmail] = useState("");
