@@ -11,6 +11,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../firebase.init';
 
 
+
 const SignUp = () => {
   const [email,setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -19,7 +20,7 @@ const SignUp = () => {
   const navigate = useNavigate();
   const [
     createUserWithEmailAndPassword, user
-  ] = useCreateUserWithEmailAndPassword(auth);
+  ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
   
 
   const handleEmailBlur = event =>{
@@ -48,6 +49,7 @@ const SignUp = () => {
     }
    
   }
+  
   
 
   

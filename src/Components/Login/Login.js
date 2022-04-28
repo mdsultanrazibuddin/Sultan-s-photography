@@ -1,5 +1,5 @@
 import { Button } from 'react-bootstrap';
-import React, {  useState } from 'react';
+import React, {   useState } from 'react';
 import { Form } from 'react-bootstrap';
 import './Login.css'
 import { Link, useLocation, useNavigate} from 'react-router-dom';
@@ -8,13 +8,16 @@ import { Link, useLocation, useNavigate} from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../firebase.init';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
+  
   const from = location.state?.from?.pathname || '/';
+  let errorElement;
   
   const [
     signInWithEmailAndPassword,
@@ -33,6 +36,9 @@ const Login = () => {
     if(user){
          navigate (from, {replace: true})
     }
+    if (error) {
+      errorElement = <p className='text-danger'>Error: {error?.message}</p>
+  }
 
   
 
@@ -41,6 +47,13 @@ const Login = () => {
     event.preventDefault();
     signInWithEmailAndPassword(email, password)
   };
+  const resetPassword = async () =>{
+    sendPasswordResetEmail(auth, email)
+    .then(()=>{
+      console.log('email sent');
+    })
+
+  }
 
   
  
@@ -55,7 +68,8 @@ const Login = () => {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                  onBlur ={ handleEmailBlur}
-                type="email"
+                
+                 type="email"
                 placeholder="Enter email"
                 required
               />
@@ -72,13 +86,13 @@ const Login = () => {
               />
             </Form.Group>
 
-            <p className="text-danger">{error?.massage}</p>
+            {errorElement}
 
             <p
-              className="register forget-pass"
+              className=" forget-pass"
               
             >
-              Forget Password?
+              Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset your password</button>
             </p>
 
             <h6>
