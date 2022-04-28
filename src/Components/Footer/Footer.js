@@ -17,7 +17,7 @@ const Footer = () => {
               <div className="footer-title col-lg-6 h-100 text-center text-lg-left my-auto mx-auto">
                
                 <h5 className=" footer-text text-muted small mb-5 mt-5 mb-lg-0">
-                  &copy; Wild Photographer {year}. All Rights Reserved.
+                  &copy; Sultan's Photography {year}. All Rights Reserved.
                 </h5>
               </div>
             </div>

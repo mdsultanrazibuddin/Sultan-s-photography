@@ -26,7 +26,7 @@ const Header = () => {
             <div className='link'>
                 
                <div className='header'>
-                    <h2> Wild Photographer</h2>
+                    <h2>Sultan's Photography</h2>
                     
                 
                </div>
@@ -56,7 +56,7 @@ const Header = () => {
               <Navbar expand="lg">
                     <Container>
                        
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Toggle  aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="navbar me-auto">
                             <Nav.Link  as ={Link} to = {'/'} href="#home">Home</Nav.Link>

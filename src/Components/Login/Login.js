@@ -96,7 +96,7 @@ const Login = () => {
             </p>
 
             <h6>
-              New to Wild Photographer?{" "}
+              New to Sultan's Photography?{" "}
               <span
                
                 className="text-primary create-new-account"
