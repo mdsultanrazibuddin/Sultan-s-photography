@@ -4,7 +4,7 @@
       "img" : "./image/Animal.jpg",
       "service": "Animal",
       "headline": "Animal Picture",
-      "description": " Animal photographer is a genre of photography concerned with documenting various forms of wildlife in their natural habitat. As well as requiring photography skills, field craft skills.",
+      "description": " This package is about animal photography. High quality pictures are taken from animals. The picture quality is also very good.",
       "price": "$200"
       
   },
@@ -13,7 +13,7 @@
       "img" : "./image/Sea-Beach.jpg",
       "service": "Sea-Beach",
       "headline": "Sea-Beach Picture",
-      "description": "Beaches are rife with opportunity for macro shots and creative abstracts. footprints in the sand, chipped paint on beach huts or boats, shells on the shore or intersecting blades of dune grass.",
+      "description": "This package is about Sea-Beach photography. High quality pictures are taken from Sea-Beach . The picture quality is also very good.",
       "price": "$230"
       
   },
@@ -22,7 +22,7 @@
       "img" : "./image/nature.jpg",
       "service": "Nature",
       "headline": "Natural Picture",
-      "description": "Nature photography refers to a wide range of photo taken outdoors & devoted to displaying natural elements such as landscapes, wildlife, forest, and close-ups of natural sceneries.",
+      "description": "This package is about Nature photography. High quality pictures are taken from Nature. The picture quality is also very good.",
       "price": "$215"
       
   }

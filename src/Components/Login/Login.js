@@ -1,4 +1,4 @@
-import { Button } from 'react-bootstrap';
+import {  Button } from 'react-bootstrap';
 import React, {   useState } from 'react';
 import { Form } from 'react-bootstrap';
 import './Login.css'
@@ -15,16 +15,21 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
+  let errorElement= '';
   
   const from = location.state?.from?.pathname || '/';
-  let errorElement;
+ 
   
   const [
     signInWithEmailAndPassword,
-    user,
+    user,error
     
-    error,
+    
   ] = useSignInWithEmailAndPassword(auth);
+  
+  if (error) {
+    errorElement = <p className='text-danger'>Error: {error?.message}</p>
+}
 
 
   const handleEmailBlur = event =>{
@@ -36,16 +41,16 @@ const Login = () => {
     if(user){
          navigate (from, {replace: true})
     }
-    if (error) {
-      errorElement = <p className='text-danger'>Error: {error?.message}</p>
-  }
-
+    
+   
   
 
   
   const handleLogin = (event) => {
     event.preventDefault();
     signInWithEmailAndPassword(email, password)
+    
+    
   };
   const resetPassword = async () =>{
     sendPasswordResetEmail(auth, email)
@@ -87,7 +92,7 @@ const Login = () => {
             </Form.Group>
 
             {errorElement}
-
+            
             <p
               className=" forget-pass"
               

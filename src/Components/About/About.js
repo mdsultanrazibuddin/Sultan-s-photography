@@ -6,8 +6,10 @@ import image from '../../images/33522.jpg'
 
 const About = () => {
     return (
-        <div className='group-container'>
-          
+        <div >
+            <h2 className='register About-me-title'>About Me</h2>
+            
+            <div className='group-container'>
             <div className='text-title'>
                 <h1 className='register'>Sultan Razib Uddin</h1>
                 <h5 className='register'>Goal: Full Stack Web Developer</h5>
@@ -17,6 +19,9 @@ const About = () => {
             <div>
                 <img className='picture' src={image} alt="" />
             </div>
+            </div>
+          
+            
               
         </div>
     );
