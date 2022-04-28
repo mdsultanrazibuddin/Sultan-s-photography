@@ -32,5 +32,8 @@ https://github.com/programming-hero-web-course-4/independent-service-provider-md
 1. Google,
 2. Email And Password.
 
+## Other:
+This project is based on an independent service provider
+
 
 
