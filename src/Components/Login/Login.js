@@ -8,7 +8,8 @@ import { Link, useLocation, useNavigate} from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../firebase.init';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { sendPasswordResetEmail } from 'firebase/auth';
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+// import { sendPasswordResetEmail } from 'firebase/auth';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -18,6 +19,7 @@ const Login = () => {
   let errorElement= '';
   
   const from = location.state?.from?.pathname || '/';
+  
  
   
   const [
@@ -26,6 +28,10 @@ const Login = () => {
     
     
   ] = useSignInWithEmailAndPassword(auth);
+
+  const [sendPasswordResetEmail] = useSendPasswordResetEmail(
+    auth
+  );
   
   if (error) {
     errorElement = <p className='text-danger'>Error: {error?.message}</p>
@@ -52,13 +58,13 @@ const Login = () => {
     
     
   };
-  const resetPassword = async () =>{
-    sendPasswordResetEmail(auth, email)
-    .then(()=>{
-      console.log('email sent');
-    })
+  // const resetPassword = () =>{
+  //   sendPasswordResetEmail(auth, email)
+  //   .then(()=>{
+  //     console.log('email sent');
+  //   })
 
-  }
+  // }
 
   
  
@@ -97,7 +103,10 @@ const Login = () => {
               className=" forget-pass"
               
             >
-              Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset your password</button>
+              Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none'onClick={async () => {
+          await sendPasswordResetEmail(email);
+          alert('Sent email');
+        }}>Reset your password</button>
             </p>
 
             <h6>
